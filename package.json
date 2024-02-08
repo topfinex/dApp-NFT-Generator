@@ -1,0 +1,26 @@
+{
+  "name": "dapp-nft-generator",
+  "version": "1.0.0",
+  "description": "This repository hosts code for a DApp specialized in creating NFTs, enabling seamless management and exchange of digital assets on the Ethereum blockchain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topfinex/dApp-NFT-Generator.git"
+  },
+  "keywords": [
+    "nft"
+  ],
+  "author": "topfinex",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/topfinex/dApp-NFT-Generator/issues"
+  },
+  "homepage": "https://github.com/topfinex/dApp-NFT-Generator#readme",
+  "dependencies": {
+    "@types/node": "^20.11.16",
+    "web3": "^4.4.0"
+  }
+}
