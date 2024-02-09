@@ -1,0 +1,15 @@
+{
+    "name": "TOPFINEX NFT",
+    "description": "This is a TOPFINEX NFT",
+    "image": "https://topfinex.com/logo-dark.png",
+    "attributes": [
+        {
+            "trait_type": "Color",
+            "value": "Blue"
+        },
+        {
+            "trait_type": "Size",
+            "value": "Medium"
+        }
+    ]
+}
