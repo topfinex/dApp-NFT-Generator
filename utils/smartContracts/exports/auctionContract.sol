@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLINSED
 pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "base64-sol/base64.sol"; // base64 encode
+import "../../../base64/base64.sol"; // base64 encode
 
 contract Users {
     // data struct to know, what user exists
