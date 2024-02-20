@@ -21,6 +21,7 @@
   "homepage": "https://github.com/topfinex/dApp-NFT-Generator#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^4.4.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.1",
     "@types/node": "^20.11.16",
     "alchemy-sdk": "^3.1.2",
     "ipfs-http-client": "^60.0.1",
