@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Wallet Integration</title>
+</head>
+
+<body>
+    <h1>Web3 Wallet Integration Example</h1>
+    <button id="connectButton">Connect to MetaMask</button>
+
+    <script>
+        // Check if Web3 is injected by MetaMask
+        window.addEventListener('load', async () => {
+            if (typeof window.ethereum !== 'undefined') {
+                // Web3 provider detected
+                const ethereum = window.ethereum;
+
+                try {
+                    // Request account access
+                    await ethereum.request({ method: 'eth_requestAccounts' });
+
+                    // Accounts now exposed
+                    console.log("Connected to MetaMask:", ethereum.selectedAddress);
+                } catch (error) {
+                    console.error("Error connecting to MetaMask:", error);
+                }
+            } else {
+                console.warn('MetaMask is not installed!');
+            }
+        });
+
+        // Function to handle the button click event
+        document.getElementById('connectButton').addEventListener('click', async () => {
+            if (typeof window.ethereum !== 'undefined') {
+                // Web3 provider detected
+                const ethereum = window.ethereum;
+
+                try {
+                    // Request account access
+                    await ethereum.request({ method: 'eth_requestAccounts' });
+
+                    // Accounts now exposed
+                    console.log("Connected to MetaMask:", ethereum.selectedAddress);
+                } catch (error) {
+                    console.error("Error connecting to MetaMask:", error);
+                }
+            } else {
+                console.warn('MetaMask is not installed!');
+            }
+        });
+    </script>
+</body>
+
+</html>
